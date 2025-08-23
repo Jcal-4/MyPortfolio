@@ -84,7 +84,7 @@ const HomePage: React.FC = () => {
                     />
                     <div>
                       <h1 className="text-2xl font-semibold text-white md:text-3xl">
-                        Hi, I’m Your Name
+                        Hi, I’m Jairo Calderon
                       </h1>
                       <p className="mt-2 text-sm text-neutral-300">
                         Frontend Engineer specialized in building elegant, performant, and accessible web experiences.
