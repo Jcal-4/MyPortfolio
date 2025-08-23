@@ -1,7 +1,7 @@
 {
 	"name": "web-creator",
 	"version": "1.0.0",
-	"homepage": "https://Jcal-4.github.io/",
+	"homepage": "https://Jcal-4.github.io/MyPortfolio/",
 	"scripts": {
 		"dev": "node scripts/build.mjs",
 		"build": "node scripts/build.mjs --production",
