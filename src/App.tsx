@@ -1,5 +1,5 @@
-import { HashRouter, Route, Routes } from 'react-router'
-import HomePage from './pages/Home'
+import { HashRouter, Route, Routes } from 'react-router';
+import HomePage from './pages/Home';
 
 export default function App() {
   return (
@@ -8,5 +8,5 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
       </Routes>
     </HashRouter>
-  )
+  );
 }
