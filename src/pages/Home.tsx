@@ -104,7 +104,7 @@ const HomePage: React.FC = () => {
                           </a>
                         </Button>
                         <Button className="border border-white/10" asChild>
-                          <a href="#" className="inline-flex items-center gap-2">
+                          <a href="/Jairo_Calderon_Salesforce_Resume.pdf" download className="inline-flex items-center gap-2">
                             <Download className="h-4 w-4" />
                             Resume
                           </a>
