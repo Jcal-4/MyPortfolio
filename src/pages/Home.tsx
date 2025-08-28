@@ -21,28 +21,22 @@ import { ArrowRight, Mail, Download, ArrowDown } from 'lucide-react';
 const projects: Project[] = [
   {
     title: 'Minimal Blog Platform',
-    description:
-      'A content-focused blog platform with MDX support, dark mode, and blazing fast performance.',
-    image:
-      'https://pub-cdn.sider.ai/u/U0R7HRY521W/web-coder/68a29d9938697d89a1065656/resource/89329972-2b4f-4e3a-a870-7d831324adfa.jpg',
+    description: 'A content-focused blog platform with MDX support, dark mode, and blazing fast performance.',
+    image: 'https://pub-cdn.sider.ai/u/U0R7HRY521W/web-coder/68a29d9938697d89a1065656/resource/89329972-2b4f-4e3a-a870-7d831324adfa.jpg',
     tags: ['React', 'TypeScript', 'MDX', 'Vite'],
     links: { live: 'https://example.com', code: 'https://github.com/' },
   },
   {
     title: 'Analytics Dashboard',
-    description:
-      'An interactive dashboard featuring real-time charts, role-based access, and responsive design.',
-    image:
-      'https://pub-cdn.sider.ai/u/U0R7HRY521W/web-coder/68a29d9938697d89a1065656/resource/6b8524f0-3f4b-49e6-971e-7e37b0b9dd18.jpg',
+    description: 'An interactive dashboard featuring real-time charts, role-based access, and responsive design.',
+    image: 'https://pub-cdn.sider.ai/u/U0R7HRY521W/web-coder/68a29d9938697d89a1065656/resource/6b8524f0-3f4b-49e6-971e-7e37b0b9dd18.jpg',
     tags: ['React', 'Tailwind', 'Charts', 'API'],
     links: { live: 'https://example.com', code: 'https://github.com/' },
   },
   {
     title: 'E-commerce Microfrontends',
-    description:
-      'A modular e-commerce experience using microfrontends for faster, independent deployments.',
-    image:
-      'https://pub-cdn.sider.ai/u/U0R7HRY521W/web-coder/68a29d9938697d89a1065656/resource/ab8f2ab9-7b99-49bd-bbc4-a8caa8dfc027.jpg',
+    description: 'A modular e-commerce experience using microfrontends for faster, independent deployments.',
+    image: 'https://pub-cdn.sider.ai/u/U0R7HRY521W/web-coder/68a29d9938697d89a1065656/resource/ab8f2ab9-7b99-49bd-bbc4-a8caa8dfc027.jpg',
     tags: ['Microfrontends', 'Module Federation', 'CI/CD'],
     links: { live: 'https://example.com', code: 'https://github.com/' },
   },
@@ -91,42 +85,26 @@ const HomePage: React.FC = () => {
                       className="h-20 w-20 rounded-2xl object-cover ring-2 ring-white/10"
                     /> */}
                     <div>
-                      <h1 className="text-2xl font-semibold text-white md:text-3xl">
-                        Hi, I’m Jairo Calderon
-                      </h1>
+                      <h1 className="text-2xl font-semibold text-white md:text-3xl">Hi, I’m Jairo Calderon</h1>
                       <p className="mt-2 text-sm text-neutral-300">
-                        Fullstack engineer with broad experience across web and
-                        enterprise platforms, including Salesforce. I build
-                        elegant, performant, and accessible web applications,
-                        reliable backends, and automated business workflows. I
-                        turn complex requirements into simple, maintainable
-                        solutions that scale.
+                        Fullstack engineer with broad experience across web and enterprise platforms, including Salesforce. I build elegant, performant, and accessible web
+                        applications, reliable backends, and automated business workflows. I turn complex requirements into simple, maintainable solutions that scale.
                       </p>
                       <div className="mt-5 flex flex-wrap items-center gap-2">
                         <Button className="border border-white/10" asChild>
-                          <a
-                            href="#projects"
-                            className="inline-flex items-center gap-2"
-                            onClick={scrollToProjects}
-                          >
+                          <a href="#projects" className="inline-flex items-center gap-2" onClick={scrollToProjects}>
                             View Projects
                             <ArrowDown className="h-4 w-4" />
                           </a>
                         </Button>
                         <Button className="border border-white/10" asChild>
-                          <a
-                            href="mailto:Jairo.Calderon.Dev@protonmail.com"
-                            className="inline-flex items-center gap-2"
-                          >
+                          <a href="mailto:Jairo.Calderon.Dev@protonmail.com" className="inline-flex items-center gap-2">
                             <Mail className="h-4 w-4" />
                             Contact Me
                           </a>
                         </Button>
                         <Button className="border border-white/10" asChild>
-                          <a
-                            href="#"
-                            className="inline-flex items-center gap-2"
-                          >
+                          <a href="#" className="inline-flex items-center gap-2">
                             <Download className="h-4 w-4" />
                             Resume
                           </a>
@@ -153,42 +131,24 @@ const HomePage: React.FC = () => {
         </Section>
 
         {/* Skills */}
-        <Section
-          id="skills"
-          title="Skills"
-          description="A snapshot of the tools and technologies I use to craft delightful user experiences."
-          className="py-12"
-        >
+        <Section id="skills" title="Skills" description="A snapshot of the tools and technologies I use to craft delightful user experiences." className="py-12">
           <Reveal>
             <div className="grid gap-6 md:grid-cols-3">
               {/* Languages & Core */}
               <div className="rounded-2xl border border-white/10 bg-neutral-900/40 p-6 backdrop-blur supports-[backdrop-filter]:bg-neutral-900/30">
-                <h3 className="text-sm font-medium text-white">
-                  Languages & Core
-                </h3>
+                <h3 className="text-sm font-medium text-white">Languages & Core</h3>
                 <div className="mt-4 flex flex-wrap gap-2">
-                  {['TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'Node.js'].map(
-                    (s) => (
-                      <SkillPill key={s} label={s} />
-                    )
-                  )}
+                  {['TypeScript', 'JavaScript', 'HTML5', 'CSS3', 'Node.js'].map((s) => (
+                    <SkillPill key={s} label={s} />
+                  ))}
                 </div>
               </div>
 
               {/* Frameworks & UI */}
               <div className="rounded-2xl border border-white/10 bg-neutral-900/40 p-6 backdrop-blur supports-[backdrop-filter]:bg-neutral-900/30">
-                <h3 className="text-sm font-medium text-white">
-                  Frameworks & UI
-                </h3>
+                <h3 className="text-sm font-medium text-white">Frameworks & UI</h3>
                 <div className="mt-4 flex flex-wrap gap-2">
-                  {[
-                    'React',
-                    'React Router',
-                    'Tailwind CSS',
-                    'Shadcn UI',
-                    'Radix',
-                    'Zustand',
-                  ].map((s) => (
+                  {['React', 'React Router', 'Tailwind CSS', 'Shadcn UI', 'Radix', 'Zustand'].map((s) => (
                     <SkillPill key={s} label={s} />
                   ))}
                 </div>
@@ -196,18 +156,9 @@ const HomePage: React.FC = () => {
 
               {/* Tools & Practices */}
               <div className="rounded-2xl border border-white/10 bg-neutral-900/40 p-6 backdrop-blur supports-[backdrop-filter]:bg-neutral-900/30">
-                <h3 className="text-sm font-medium text-white">
-                  Tools & Practices
-                </h3>
+                <h3 className="text-sm font-medium text-white">Tools & Practices</h3>
                 <div className="mt-4 flex flex-wrap gap-2">
-                  {[
-                    'Git',
-                    'CI/CD',
-                    'Testing',
-                    'Accessibility',
-                    'Performance',
-                    'Analytics',
-                  ].map((s) => (
+                  {['Git', 'CI/CD', 'Testing', 'Accessibility', 'Performance', 'Analytics'].map((s) => (
                     <SkillPill key={s} label={s} />
                   ))}
                 </div>
@@ -220,7 +171,7 @@ const HomePage: React.FC = () => {
         <Section
           id="projects"
           title="Projects"
-          description="Selected works that highlight my approach to building clean, maintainable, and user-centric products."
+          description="Personal projects showcasing a range of fullstack work — web apps, backend services, and integrations — that I built end-to-end to explore ideas, learn new technologies, and solve real problems."
           className="py-12"
         >
           <Reveal>
@@ -243,46 +194,28 @@ const HomePage: React.FC = () => {
             <div className="rounded-3xl border border-white/10 bg-neutral-900/40 p-8 backdrop-blur supports-[backdrop-filter]:bg-neutral-900/30">
               <div className="flex flex-col items-start gap-6 md:flex-row md:items-center md:justify-between">
                 <div>
-                  <h3 className="text-xl font-semibold text-white">
-                    Get in touch
-                  </h3>
+                  <h3 className="text-xl font-semibold text-white">Get in touch</h3>
                   <p className="mt-2 text-sm text-neutral-300">
                     Email:{' '}
-                    <a
-                      href="mailto:hello@example.com"
-                      className="text-neutral-100 underline underline-offset-4"
-                    >
-                      hello@example.com
+                    <a href="mailto:Jairo.Calderon.Dev@protonmail.com" className="text-neutral-100 underline underline-offset-4">
+                      Jairo.Calderon.Dev@protonmail.com
                     </a>
                   </p>
-                  <p className="mt-1 text-sm text-neutral-400">
-                    Based in Anywhere, Remote-friendly
-                  </p>
+                  <p className="mt-1 text-sm text-neutral-400">Based in Nevada, Remote-friendly</p>
                 </div>
                 <div className="flex flex-wrap gap-2">
                   <Button asChild>
-                    <a
-                      href="mailto:hello@example.com"
-                      className="inline-flex items-center gap-2"
-                    >
-                      <Mail className="h-4 w-4" /> Say Hello
+                    <a href="mailto:Jairo.Calderon.Dev@protonmail.com" className="border border-white/10">
+                      <Mail className="h-4 w-4" /> Contact Me
                     </a>
                   </Button>
-                  <Button variant="outline" className="bg-transparent" asChild>
-                    <a
-                      href="https://github.com/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
+                  <Button className="border border-white/10" asChild>
+                    <a href="https://github.com/" target="_blank" rel="noreferrer">
                       GitHub
                     </a>
                   </Button>
-                  <Button variant="outline" className="bg-transparent" asChild>
-                    <a
-                      href="https://www.linkedin.com/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
+                  <Button className="border border-white/10" asChild>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
                       LinkedIn
                     </a>
                   </Button>

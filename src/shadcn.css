@@ -104,5 +104,5 @@ html > body * {
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: hsl(var(--border)) transparent;
+  scrollbar-color: hsl(var(--border));
 }
