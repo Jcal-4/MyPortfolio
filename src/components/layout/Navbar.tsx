@@ -47,7 +47,7 @@ const Navbar: React.FC = () => {
         <div className="mt-4 flex items-center justify-between rounded-2xl border border-white/10 bg-neutral-900/50 px-4 py-3 backdrop-blur supports-[backdrop-filter]:bg-neutral-900/40">
           <div className="flex items-center gap-3">
             {/* <div className="h-8 w-8 shrink-0 rounded-lg bg-gradient-to-br from-indigo-500/70 to-cyan-500/70" aria-hidden /> */}
-            <span className="select-none text-sm font-semibold tracking-wide text-white">MyPortfolio</span>
+            <span className="select-none text-sm font-semibold tracking-wide text-white">Jairo Calderon</span>
           </div>
 
           <nav className="hidden items-center gap-2 md:flex">

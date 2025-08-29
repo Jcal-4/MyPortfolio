@@ -44,7 +44,7 @@ const projects: Project[] = [
     title: 'Echo',
     description: 'A site that is made for the friends to talk with friends, being a clone of Discord it uses live messaging so that the users can chat real time.',
     image: 'Echo-header.png',
-    tags: ['React/Redux', 'Python', 'Websockets', 'AWS', 'Flask'],
+    tags: ['React/Redux', 'Python', 'Javascript', 'Websockets', 'AWS', 'Flask'],
     links: { code: 'https://github.com/Bergan404/Echo' },
   },
 ];
@@ -134,7 +134,7 @@ const HomePage: React.FC = () => {
         </Section>
 
         {/* Skills */}
-        <Section id="skills" title="Skills" description="A snapshot of the tools and technologies I use to craft delightful user experiences." className="py-12">
+        <Section id="skills" title="Skills" description="A quick overview of the tools and technologies I use to build thoughtful, user-centered experiences." className="py-12">
           <Reveal>
             <div className="grid gap-6 md:grid-cols-3">
               {/* Languages & Core */}
@@ -151,7 +151,7 @@ const HomePage: React.FC = () => {
               <div className="rounded-2xl border border-white/10 bg-neutral-900/40 p-6 backdrop-blur supports-[backdrop-filter]:bg-neutral-900/30">
                 <h3 className="text-sm font-medium text-white">Frameworks & UI</h3>
                 <div className="mt-4 flex flex-wrap gap-2">
-                  {['React', 'React Router', 'Tailwind CSS', 'Shadcn UI', 'Radix', 'Zustand'].map((s) => (
+                  {['React', 'React Router', 'Tailwind CSS'].map((s) => (
                     <SkillPill key={s} label={s} />
                   ))}
                 </div>
@@ -174,7 +174,7 @@ const HomePage: React.FC = () => {
         <Section
           id="projects"
           title="Projects"
-          description="Personal projects showcasing a range of fullstack work — web apps, backend services, and integrations — that I built end-to-end to explore ideas, learn new technologies, and solve real problems."
+          description="Personal projects showcasing a range of fullstack work — web apps, backend services, and integrations that I built end-to-end to explore ideas, learn new technologies, and solve real problems."
           className="py-12"
         >
           <Reveal>
