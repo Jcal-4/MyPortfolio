@@ -12,7 +12,7 @@ import Reveal from '../components/common/Reveal';
 import SkillPill from '../components/skills/SkillPill';
 import ProjectCard, { Project } from '../components/projects/ProjectCard';
 import { Button } from '../components/ui/button';
-import { ArrowRight, Mail, Download, ArrowDown } from 'lucide-react';
+import { ArrowRight, Mail, Download, ArrowDown, View } from 'lucide-react';
 
 /**
  * Sample projects data for the portfolio section.
@@ -20,25 +20,32 @@ import { ArrowRight, Mail, Download, ArrowDown } from 'lucide-react';
  */
 const projects: Project[] = [
   {
-    title: 'Minimal Blog Platform',
-    description: 'A content-focused blog platform with MDX support, dark mode, and blazing fast performance.',
-    image: 'https://pub-cdn.sider.ai/u/U0R7HRY521W/web-coder/68a29d9938697d89a1065656/resource/89329972-2b4f-4e3a-a870-7d831324adfa.jpg',
-    tags: ['React', 'TypeScript', 'MDX', 'Vite'],
-    links: { live: 'https://example.com', code: 'https://github.com/' },
+    title: 'Spendo',
+    description: 'A clean, feature-rich personal finance app focused on comprehensive financial insights and powerful transaction management.',
+    image: 'Spendo.png',
+    tags: ['OpenAI API', 'React', 'TypeScript', 'Tailwind', 'Vite', 'Python', 'PostgreSQL', 'Mantine'],
+    links: { live: 'https://example.com', code: 'https://github.com/Jcal-4/Spendo' },
   },
   {
-    title: 'Analytics Dashboard',
-    description: 'An interactive dashboard featuring real-time charts, role-based access, and responsive design.',
-    image: 'https://pub-cdn.sider.ai/u/U0R7HRY521W/web-coder/68a29d9938697d89a1065656/resource/6b8524f0-3f4b-49e6-971e-7e37b0b9dd18.jpg',
-    tags: ['React', 'Tailwind', 'Charts', 'API'],
-    links: { live: 'https://example.com', code: 'https://github.com/' },
+    title: 'Salesforce - Debug Log Analyzer',
+    description: 'A VS Code extension that streamlines Salesforce Debug Log analysis, speeding up issue detection and resolution to reduce troubleshooting time.',
+    image: 'Salesforce - Debug Analyzer.png',
+    tags: ['React', 'Tailwind', 'VSCode API', 'Webview API', 'Vite'],
+    links: { code: 'https://github.com/Jcal-4/Debug-Log-Analyzer' },
   },
   {
-    title: 'E-commerce Microfrontends',
-    description: 'A modular e-commerce experience using microfrontends for faster, independent deployments.',
-    image: 'https://pub-cdn.sider.ai/u/U0R7HRY521W/web-coder/68a29d9938697d89a1065656/resource/ab8f2ab9-7b99-49bd-bbc4-a8caa8dfc027.jpg',
-    tags: ['Microfrontends', 'Module Federation', 'CI/CD'],
-    links: { live: 'https://example.com', code: 'https://github.com/' },
+    title: 'Vid-Hub',
+    description: 'A fullstack clone of the viral media app TikTok that allows users to share videos in a social media hub and communicate with others',
+    image: 'Vid-hub.png',
+    tags: ['React/Redux', 'Python', 'Websockets', 'AWS', 'Flask'],
+    links: { code: 'https://github.com/Jcal-4/TikTokClone' },
+  },
+  {
+    title: 'Echo',
+    description: 'A site that is made for the friends to talk with friends, being a clone of Discord it uses live messaging so that the users can chat real time.',
+    image: 'Echo-header.png',
+    tags: ['React/Redux', 'Python', 'Websockets', 'AWS', 'Flask'],
+    links: { code: 'https://github.com/Bergan404/Echo' },
   },
 ];
 
@@ -91,12 +98,12 @@ const HomePage: React.FC = () => {
                         applications, reliable backends, and automated business workflows. I turn complex requirements into simple, maintainable solutions that scale.
                       </p>
                       <div className="mt-5 flex flex-wrap items-center gap-2">
-                        <Button className="border border-white/10" asChild>
+                        {/* <Button className="border border-white/10" asChild>
                           <a href="#projects" className="inline-flex items-center gap-2" onClick={scrollToProjects}>
                             View Projects
                             <ArrowDown className="h-4 w-4" />
                           </a>
-                        </Button>
+                        </Button> */}
                         <Button className="border border-white/10" asChild>
                           <a href="mailto:Jairo.Calderon.Dev@protonmail.com" className="inline-flex items-center gap-2">
                             <Mail className="h-4 w-4" />
@@ -104,9 +111,9 @@ const HomePage: React.FC = () => {
                           </a>
                         </Button>
                         <Button className="border border-white/10" asChild>
-                          <a href="/Jairo_Calderon_Salesforce_Resume.pdf" download className="inline-flex items-center gap-2">
-                            <Download className="h-4 w-4" />
-                            Resume
+                          <a href="Jairo_Calderon_Salesforce_Resume.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2">
+                            <View className="h-4 w-4" />
+                            View Resume
                           </a>
                         </Button>
                       </div>
@@ -119,11 +126,7 @@ const HomePage: React.FC = () => {
             <Reveal delayMs={120}>
               <div className="relative">
                 <div className="aspect-[4/3] overflow-hidden rounded-3xl border border-white/10">
-                  <img
-                    src="https://pub-cdn.sider.ai/u/U0R7HRY521W/web-coder/68a29d9938697d89a1065656/resource/6a17549f-c0dd-419b-92d0-cf02cc8cf03e.jpg"
-                    alt="Workspace"
-                    className="h-full w-full object-cover"
-                  />
+                  <img src="portfolio-background2.jpg" alt="Workspace" className="h-full" />
                 </div>
               </div>
             </Reveal>
@@ -186,8 +189,8 @@ const HomePage: React.FC = () => {
         {/* Contact */}
         <Section
           id="contact"
-          title="Let’s build something great"
-          description="I’m open to freelance projects, collaborations, and full-time roles. Feel free to reach out."
+          title="Open for opportunities"
+          description="Available for full-time roles, freelance gigs, or teaming up on projects — let’s connect."
           className="py-12"
         >
           <Reveal>
@@ -210,12 +213,12 @@ const HomePage: React.FC = () => {
                     </a>
                   </Button>
                   <Button className="border border-white/10" asChild>
-                    <a href="https://github.com/" target="_blank" rel="noreferrer">
+                    <a href="https://github.com/Jcal-4" target="_blank" rel="noreferrer">
                       GitHub
                     </a>
                   </Button>
                   <Button className="border border-white/10" asChild>
-                    <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+                    <a href="https://www.linkedin.com/in/jairo-calderon-44512ba5/" target="_blank" rel="noreferrer">
                       LinkedIn
                     </a>
                   </Button>
