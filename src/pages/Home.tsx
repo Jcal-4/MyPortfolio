@@ -24,7 +24,7 @@ const projects: Project[] = [
     description: 'A clean, feature-rich personal finance app focused on comprehensive financial insights and powerful transaction management.',
     image: 'Spendo.png',
     tags: ['OpenAI API', 'React', 'TypeScript', 'Tailwind', 'Vite', 'Python', 'PostgreSQL', 'Mantine'],
-    links: { live: 'https://example.com', code: 'https://github.com/Jcal-4/Spendo' },
+    links: { live: 'https://spendo-386e7e9da44d.herokuapp.com/', code: 'https://github.com/Jcal-4/Spendo' },
   },
   {
     title: 'Salesforce - Debug Log Analyzer',
