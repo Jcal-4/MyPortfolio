@@ -86,11 +86,7 @@ const HomePage: React.FC = () => {
                 <div className="absolute -inset-1 -z-10 rounded-3xl bg-gradient-to-br from-white/5 to-white/0 blur-lg" />
                 <div className="rounded-3xl border border-white/10 bg-neutral-900/40 p-6 backdrop-blur supports-[backdrop-filter]:bg-neutral-900/30">
                   <div className="flex items-start gap-5">
-                    {/* <img
-                      src="https://pub-cdn.sider.ai/u/U0R7HRY521W/web-coder/68a29d9938697d89a1065656/resource/1813c1a7-c4f6-432a-954e-533fc2a978b5.jpg"
-                      alt="Avatar"
-                      className="h-20 w-20 rounded-2xl object-cover ring-2 ring-white/10"
-                    /> */}
+                    <img src="PersonalCoverPictureFinal2.jpg" alt="Avatar" className="max-w-[183px] rounded-2xl object-cover ring-2 ring-white/10" />
                     <div>
                       <h1 className="text-2xl font-semibold text-white md:text-3xl">Hi, I’m Jairo Calderon</h1>
                       <p className="mt-2 text-sm text-neutral-300">
